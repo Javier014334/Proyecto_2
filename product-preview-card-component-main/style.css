@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: hsl(30, 38%, 92%);
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.contenido {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    background-color: hsl(0, 0%, 100%);
+    width: 50%;
+    height: 70%;
+    overflow: hidden;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 24px -4px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 24px -4px rgba(0, 0, 0, 0.5);
+}
+
+.imagen {
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+    object-fit: cover;
+}
+
+.letras {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 10%;
+    gap: 15px;
+}
+
+.logo {
+    letter-spacing: 0.5em;
+    color: hsl(228, 12%, 48%);
+}
+
+h1 {
+    font-family: 'Fraunces', sans-serif;
+    line-height: 1em;
+    font-size: 2.8em;
+}
+
+.concepto {
+    color: hsl(228, 12%, 48%);
+    font-size: 1.1em;
+}
+
+.valores {
+    font-family: 'Fraunces', sans-serif;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.precio {
+    font-size: 3em;
+    color: hsl(158, 36%, 37%);
+}
+
+.tachado {
+    font-size: 1.2em;
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+}
+
+button {
+    background-color: hsl(158, 36%, 37%);
+    padding: 1em;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(0, 0%, 100%);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+button:hover {
+    background-color: hsl(212, 21%, 14%);
+}
+
+
+@media screen and (max-width: 505px) {
+    .contenido {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        height: 85%;
+    }
+
+    .imagen {
+        display: flex;
+        height: 200px;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        background: white;
+
+    }
+    img {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        object-fit: cover;
+        border-radius: 10px 0 0 0;
+
+    }
+    .letras {
+        gap: 20px;
+    }
+
+
+    .logo {
+        letter-spacing: 0.25em;
+    }
+    
+    h1 {
+        font-family: 'Fraunces', sans-serif;
+        line-height: 1em;
+        font-size: 1.8em;
+    }
+    
+    .concepto {
+        font-size: 0.8em;
+    }
+    
+    .valores {
+        font-family: 'Fraunces', sans-serif;
+        display: flex;
+        gap: 10px;
+        justify-content: left;
+    }
+    
+    .precio {
+        font-size: 2em;
+    }
+    
+    .tachado {
+        font-size: 0.9em;
+        color: hsl(228, 12%, 48%);
+        text-decoration: line-through;
+    }
+
+    
+
+
+}
